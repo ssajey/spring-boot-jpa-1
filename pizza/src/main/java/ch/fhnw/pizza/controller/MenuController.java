@@ -25,7 +25,7 @@ public class MenuController {
         return pizzaList;
     }
 
-    @PostMapping(path="/", consumes="application/json", produces = "application/json")
+    @PostMapping(path="/pizza", consumes="application/json", produces = "application/json")
     public ResponseEntity<Void> addPizza(@RequestBody Pizza pizza) {
         return ResponseEntity.ok().build();
     }
